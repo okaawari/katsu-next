@@ -95,7 +95,7 @@ const Article = ({article}) => {
 
 
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
 
     const res = await fetch(`https://fukkatsuhub.com/api/anime/${context.params.id}`)
 
@@ -108,7 +108,7 @@ export const getStaticProps = async (context) => {
     }
 }
 
-export const getStaticPaths = async () => {
+export const getServerSidePaths = async () => {
     const res = await fetch(`https://fukkatsuhub.com/api/animes`)
 
     const articles = await res.json()

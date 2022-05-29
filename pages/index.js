@@ -19,7 +19,7 @@ export default function Home({articles}) {
 //   }
 // }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch(`https://fukkatsuhub.com/api/animes`)
   const articles = await res.json()
 
