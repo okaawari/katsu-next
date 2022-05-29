@@ -5,9 +5,9 @@ import RightSideBar from '../src/components/sideBar'
 
 function MyApp({ Component, pageProps }) {
   return (
-      <div className='flex flex-row w-full'>
+      <div style={{display: 'flex', flexDirection: 'row', width: '100%'}} className='flex flex-row w-full'>
         <RightSideBar />
-        <div className='w-full'>
+        <div style={{width: '100%'}} className='w-full'>
           <Navbar />
           <Layout>
             <Component {...pageProps} />
