@@ -1,4 +1,4 @@
-import Meta from '../components/Meta'
+import Meta from '../src/components/Meta'
 
 const about = () => {
     return (
