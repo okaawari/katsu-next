@@ -29,7 +29,7 @@ export default function RightSideBar() {
     const [selectedTab, setSelectedTab] = useState(0)
     return (
         
-        <div style={{display: 'flex', position: 'sticky', top: 0, maxWidth: 260, width: '100%', height: 'screen', backgroundColor: '#292C37'}}>
+        <div className='h-screen hidden w-full max-w-[260px] bg-[#292C37] md:flex sticky top-0 pt-[32px] items-center'>
             <div className='flex flex-row pl-[25.5px] absolute top-[20px]'>
                 {/* <img  alt='' className='w-[53.5px] h-[60px]'/> */}
                 <div className='h-[60px] ml-[10px]'>
